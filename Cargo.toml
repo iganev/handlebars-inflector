@@ -12,7 +12,6 @@ repository = "https://github.com/iganev/handlebars-inflector"
 documentation = "https://docs.rs/crate/handlebars-inflector/"
 readme = "README.md"
 license = "BSD-2"
-license-file = "LICENSE"
 
 [lib]
 name = "handlebars_inflector"
