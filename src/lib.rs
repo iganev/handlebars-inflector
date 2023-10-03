@@ -129,83 +129,81 @@ impl HelperDef for HandlebarsInflector {
             return Ok(());
         }
 
-        let value = input.value().render();
+        let mut output = input.value().render();
 
-        let mut output = String::from(value);
-
-        if let Some(_) = h.hash_get("to_camel_case") {
+        if h.hash_get("to_camel_case").is_some() {
             output = output.to_camel_case();
         }
 
-        if let Some(_) = h.hash_get("to_pascal_case") {
+        if h.hash_get("to_pascal_case").is_some() {
             output = output.to_pascal_case();
         }
 
-        if let Some(_) = h.hash_get("to_snake_case") {
+        if h.hash_get("to_snake_case").is_some() {
             output = output.to_snake_case();
         }
 
-        if let Some(_) = h.hash_get("to_screaming_snake_case") {
+        if h.hash_get("to_screaming_snake_case").is_some() {
             output = output.to_screaming_snake_case();
         }
 
-        if let Some(_) = h.hash_get("to_kebab_case") {
+        if h.hash_get("to_kebab_case").is_some() {
             output = output.to_kebab_case();
         }
 
-        if let Some(_) = h.hash_get("to_train_case") {
+        if h.hash_get("to_train_case").is_some() {
             output = output.to_train_case();
         }
 
-        if let Some(_) = h.hash_get("to_sentence_case") {
+        if h.hash_get("to_sentence_case").is_some() {
             output = output.to_sentence_case();
         }
 
-        if let Some(_) = h.hash_get("to_title_case") {
+        if h.hash_get("to_title_case").is_some() {
             output = output.to_title_case();
         }
 
-        if let Some(_) = h.hash_get("ordinalize") {
+        if h.hash_get("ordinalize").is_some() {
             output = output.ordinalize();
         }
 
-        if let Some(_) = h.hash_get("deordinalize") {
+        if h.hash_get("deordinalize").is_some() {
             output = output.deordinalize();
         }
 
-        if let Some(_) = h.hash_get("to_foreign_key") {
+        if h.hash_get("to_foreign_key").is_some() {
             output = output.to_foreign_key();
         }
 
-        if let Some(_) = h.hash_get("demodulize") {
+        if h.hash_get("demodulize").is_some() {
             output = output.demodulize();
         }
 
-        if let Some(_) = h.hash_get("deconstantize") {
+        if h.hash_get("deconstantize").is_some() {
             output = output.deconstantize();
         }
 
-        if let Some(_) = h.hash_get("to_class_case") {
+        if h.hash_get("to_class_case").is_some() {
             output = output.to_class_case();
         }
 
-        if let Some(_) = h.hash_get("to_table_case") {
+        if h.hash_get("to_table_case").is_some() {
             output = output.to_table_case();
         }
 
-        if let Some(_) = h.hash_get("to_plural") {
+        if h.hash_get("to_plural").is_some() {
             output = output.to_plural();
         }
 
-        if let Some(_) = h.hash_get("to_singular") {
+        if h.hash_get("to_singular").is_some() {
             output = output.to_singular();
         }
 
-        if let Some(_) = h.hash_get("to_upper_case") {
+        if h.hash_get("to_upper_case").is_some() {
             output = output.to_uppercase();
         }
 
-        if let Some(_) = h.hash_get("to_lower_case") {
+        if h.hash_get("to_lower_case").is_some() {
             output = output.to_lowercase();
         }
 
