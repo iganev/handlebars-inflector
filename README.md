@@ -1,3 +1,8 @@
+[![Crates.io](https://img.shields.io/crates/v/handlebars-inflector?color=4d76ae)](https://crates.io/crates/handlebars-inflector)
+[![API](https://docs.rs/handlebars-inflector/badge.svg)](https://docs.rs/handlebars-inflector)
+[![Build and Test](https://github.com/iganev/handlebars-inflector/actions/workflows/rust.yml/badge.svg)](https://github.com/iganev/handlebars-inflector/actions/workflows/rust.yml)
+[![dependency status](https://deps.rs/repo/github/iganev/handlebars-inflector/status.svg)](https://deps.rs/repo/github/iganev/handlebars-inflector)
+
 # handlebars-inflector
 String inflector helper for [handlebars-rust](https://github.com/sunng87/handlebars-rust)
 
