@@ -9,6 +9,8 @@ String inflector helper for [handlebars-rust](https://github.com/sunng87/handleb
 ## Quick Start
 
 Developed and tested with handlebars-rust v4.4.0 and Inflector v0.11.4.  
+Version `0.1.*` are compatible with handlebars `4`.  
+Version `0.2.*` are compatible with handlebars `5`. (Thanks to [campeis](https://github.com/campeis))
 
 ### Registration
 
