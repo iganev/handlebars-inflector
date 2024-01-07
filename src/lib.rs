@@ -1,6 +1,6 @@
 use handlebars::{
     Context, Handlebars, Helper, HelperDef, HelperResult, JsonRender, Output, RenderContext,
-    RenderError,
+    RenderErrorReason,
 };
 use inflector::Inflector;
 
@@ -115,7 +115,7 @@ impl HelperDef for HandlebarsInflector {
             input
         } else {
             if r.strict_mode() {
-                return Err(RenderError::new("Missing parameter"));
+                return Err(RenderErrorReason::ParamNotFoundForIndex("inflect", 0).into());
             }
 
             return Ok(());
@@ -123,7 +123,12 @@ impl HelperDef for HandlebarsInflector {
 
         if !input.value().is_string() {
             if r.strict_mode() {
-                return Err(RenderError::new("Invalid parameter type"));
+                return Err(RenderErrorReason::ParamTypeMismatchForName(
+                    "inflect",
+                    "0".to_string(),
+                    "string".to_string(),
+                )
+                .into());
             }
 
             return Ok(());
