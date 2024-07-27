@@ -1,6 +1,6 @@
 [package]
 name = "handlebars-inflector"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 authors = ["Ivan Ganev <iganev@cytec.bg>"]
 description = "Handlebars string inflector helper."
@@ -17,8 +17,8 @@ name = "handlebars_inflector"
 path = "src/lib.rs"
 
 [dependencies]
-handlebars = { version = "^5" }
-Inflector = { version = "^0.11" }
+handlebars = { version = "5" }
+Inflector = { version = "0" }
 
 [badges]
 maintenance = { status = "actively-developed" }
